@@ -1,129 +1,75 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="stylesheet.css" >
-        
-        <!--It doesn't have a title yet.-->
-        <title></title>
-    <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/source-sans-pro:n2,n4,n3,n6,n9,n7:default;source-serif-pro:n2,n4,n3,n6,n9:default;source-code-pro:n2:default;mrs-saint-delafield:n4:default;tangerine:n4,n7:default;meddon:n4:default;bilbo-swash-caps:n4:default;coming-soon:n4:default;dancing-script:n4:default;alexa-std:n4:default;covered-by-your-grace:n4:default;architects-daughter:n4:default;chewy:n4:default;jolly-lodger:n4:default;schoolbell:n4:default;annie-use-your-telescope:n4:default;aladin:n4:default;devonshire:n4:default;julee:n4:default;kranky:n4:default;cookie:n4:default;salsa:n4:default;rancho:n4:default;gloria-hallelujah:n4:default;english-small-caps:n4:default;dynalight:n4:default;carter-one:n4:default;patrick-hand:n4:default.js" type="text/javascript"></script>
-</head>
-<body>
-		<!-- I divide the whole page into 6 main parts (6 rectangles) :   rectangle 1 (id=rec1), 
-        												  				  rectangle 2 (id=rec2),
-                                                                          rectangle 3 (id=rec3),
-                                                                          rectangle 4 (id=rec4),
-                                                                          rectangle 5 (id=bottom),
-                                                                          rectangle 6 (id=footer)
-																							  				-->
-        <!--The rectangle 1, facbook icon and twitter icon are here. They are images that from other webs. The two icons haven't been linked anything yet-->
-        <div class="rec1"><img id="twitter"src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_black-512.png" width="26" height="25" alt=""/><img id="facebook" src="http://i.stack.imgur.com/kNPKJ.gif" width="26" height="25" alt=""/>
-        
-        <!--the main title of the web, "Grade Distribution.org"-->
-         <header id="title"><span>G</span>rade <span>D</span>istribution</header>
-         <header id="title2"><span>.</span>org</header>
-         
-        <!--The searching area. A search rectangle, a '|' sign and words "search professors" are included-->
-         <div id="search"></div>
-         <header id="search2">|</header>
-         <header id="search3">search professors</header>
-         </div>
-         
-         <!--Sign in and sign up box. I separate "sign in"  and "sign up" so that they can be separately linked to other pages later-->
-		 <div id="sign">
-		  <header id="in">Sign In</header>
-          <header id="up">Sign Up</header>
-          <header id="mid">/</header>
-        </div>
-        
-        <!--rectangle 2. Nothing is inside-->
-		<div class="rec2"></div>
-        
-        <!--rectangle 3. sub titel "professor score" and "grade distribution" are included here. Also, it inludes the diagram of the grade distribution on the right of the middle page. In detials, 5 columns are separated (id= score_a to score_f), 5 letter grades under the columns are separated, inside the 5 columns, there are 5 different colored columns as well. It hasn't been functioned yet.   -->
-        <div class="rec3">
-            <header class="PS">Professor Score</header>
-            <header class="GD">Grade Distribution</header>
-            <div id="score_a"></div>
-            <div id="score_b"></div>
-            <div id="score_c"></div>
-            <div id="score_d"></div>
-          	<div id="score_f"></div>
-            
-       	    <header id="a">A</header>
-       	    <header id="b">B</header>
-       	    <header id="c">C</header>
-            <header id="d">D</header>
-       	    <header id="e">F </header>
-            
-            <div id="color_a"></div>
-            <div id="color_b"></div>
-            <div id="color_c"></div>
-            <div id="color_d"></div>
-            <div id="color_e"></div>
-        </div>
-        
-        <!--Under the rectangle 3, the white area is not a box. It has no color at all, so it just appears white background by default. However, there are 4 separated small culumns inside this white area, which show the classes'snames. (id=inside_rec1 to inside_rec4).-->
-        
-        <!--As you can see, in the first small column, the evaluation of the professor is shown-->
-        <div class="inside_rec1">
-            <p class="EHC">Easy Help Clarify</p>
-            <p class="scores">3.0 &nbsp; &nbsp;5.0 &nbsp; &nbsp; 5.0</p>
-        </div>
-        
-        <!--Second small column, the first class is shown-->
-        <div class="inside_rec2">
-            <p>Math 7</p>
-        </div>
-        
-        <!--Third small column, the second class is shown-->
-        <div class="inside_rec3">
-            <p>Math 8</p>
-        </div>
-        
-        <!--Fourth small column, the third class is shown-->
-        <div class="inside_rec4">
-            <p>Math 11</p>
-        </div>
-        
-        <!--Here, the professor's name, the professor's photo are shown.-->
-        <h id="prof">Solymani Sam</h>
-        <div class="photo"></div>
-        
-        <!--"Rate me" is here. It hasn't been linked to any page yet.-->
-        <p class="rate_me">Rate Me ! </p>
-        
-        <!--Here is the rectangle 4 and one comment is included-->
-        <div class="rec4">
-    	<header>We <span>Highly Recommend</span> This Professor !</header>
-    	</div>
-        
-        <!--This vertical line is shown between the professor's profile and the evaluaton-->
-        <div class="ver_line"></div>
-        
-        <!--Here is the 5th main rectangle.-->
-		<div id="bottom">
-        
-        <!--Here is the title area, backgrund black color with a subtitle-->
-        <div id="b_1"></div>
-  		<div id="b_title">Grade Distribution by Semester</div>
-  
-  		<!--Here is an unorder list to shown 4 different semesters. The drop down menu has to be added later.-->
-  		<ul>
-  	      <li>&#10152;Fall 2014</li>
-          <li>&#10152;Winter 2014</li>
-          <li>&#10152;Spring 2014</li>
-          <li>&#10152;Summer 2014</li>
-        </ul>
-        
-        <!--4 horizontal lines here to separate 4 semesters-->
-  		  <div id="line_1"></div>
-          <div id="line_2"></div>
-          <div id="line_3"></div>
-          <div id="line_4"></div>
-        
-        <!--The 6th main rectangle is here (id=footer). And the contact information is included. They haven't been linked to any other pages yet. -->
-		  </div><div id="footer">
-  		  <header id="f_word">Contact  &nbsp; &nbsp; &nbsp; &nbsp;Terms of Service&nbsp; &nbsp; &nbsp;&nbsp; About   	&nbsp; &nbsp;&nbsp; &nbsp; SMC.edu</header>
-		  </div>
-</body>
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>SMC Grade Distribution</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed-to-top navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+	        <div class="navbar-header">
+          <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>-->
+          
+          <a class="navbar-left" href="#"><img src="assets/Side-Menu-Icon.png" /></a>
+          
+          <a class="navbar-brand" href="#"><img src="assets/Nav-Bar-Logo.png" /></a>
+        </div>
+	        	<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right"> <!-- Social media icons/links here -->
+						<li class="social"><a href="abc#"><img src="assets/Facebook-Icon(black).png" /></a></li>
+						<li class="social"><a href="def#"><img src="assets/Twitter-Icon(black).png" /></a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+	    </div>
+    </nav>
+
+    <div class="container-fluid">
+	<!-- Main component -->
+	  <div id="main">
+		  <div id="herologo">
+	        <img src="assets/Logo.png" />
+	        <p id="herotitle">G r a d e D i s t r i b u t i o n . O r g</p>
+		  </div>
+		  
+		  <div id="herosearch">
+	        search
+		  </div>
+      </div>
+
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
