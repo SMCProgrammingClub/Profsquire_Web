@@ -13,6 +13,11 @@ a {
 	outline: none;
 }
 
+a:hover, a:focus {
+	color: #8FB8DB;
+	outline: none;
+}
+
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before,
 .clearfix:after {
@@ -122,10 +127,19 @@ a {
 	-webkit-backface-visibility: hidden;
 }
 
+.burger {
+
+background: url('../img/burger.jpg') center right no-repeat;
+padding:0 16px 0 0;
+white-space:nowrap;
+
+}
+
 button {
 	border: none;
-	padding: 0.6em 1.2em;
-	background: #387B98;
+	padding: 2em 1.8em;
+	padding-bottom: 15px;
+	background: url('../img/burger.png') center right no-repeat;
 	color: #fff;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	font-size: 1em;
@@ -137,9 +151,9 @@ button {
 	border-radius: 2px;
 }
 
-button:hover {
+/*button:hover {
 	background: #91bfd3; 
-}
+}*/
 
 
 @media screen and (max-width: 25em) {
@@ -215,13 +229,15 @@ button:hover {
 	overflow: hidden;
 }
 .fs1 {
-	font-size: 32px;
-	color: #387B98;
+	font-size: 36px;
+	color: #000000;
+	cursor: pointer;
 
 }
 .fs2 {
-	font-size: 32px;
-	color: #ffffff;
-	float : center;
+	font-size: 36px;
+	color: #000000;
+	cursor: pointer;
+
 
 }
