@@ -22,3 +22,19 @@ header a {
     text-decoration: none;
     line-height: 40px;
 }
+
+#professor_full_profile {
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+    Background-color: #fff;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+#professor_full_profile:hover{
+    color: #fff;
+    Background-color: #B2E6FF;
+}
