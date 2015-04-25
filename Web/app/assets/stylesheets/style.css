@@ -44,6 +44,7 @@ header a {
     Background-color: #fff;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     position:relative;
+    cursor: pointer; cursor: hand;
 }
 
 #professor_full_profile:hover {
@@ -59,6 +60,7 @@ header a {
     margin-right: 5px;
     float: right;
     position:relative;
+    cursor: pointer; cursor: hand;
 }
 
 #x:hover{
@@ -74,9 +76,10 @@ header a {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     position:relative;
     z-index: 2;
+    cursor: pointer; cursor: hand;
 }
 
-#content{
+#content {
     width: 425px;
     height: 510px;
     background-color: #fff;
