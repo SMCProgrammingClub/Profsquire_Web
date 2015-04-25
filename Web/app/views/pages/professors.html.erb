@@ -1,3 +1,39 @@
 <h1>Professors Page</h1>
 
-<div id = "professor_full_profile">View Full Profile</div>
+<button id="professor_full_profile">View Full Profile</button>
+
+
+
+<div id="professor_profile" style= "display: none;">
+
+  <div id="professor_pop_top">
+    <div id="professor_pop_image"><%= image_tag 'Professor-Bust-Small.png', width: 120, height: 124, :alt => 'Bust' %></div>
+    <div id="professor_name">Jimenez, Ben</div>
+  </div>
+
+  <div id="next"><button id="x" >X</button></div>
+  <div id="content">
+   <br><br><br><br><br> Easiness <hr> Helfullness <hr> Clarity <hr> Easiness <hr> Helfullness <hr> Clarity <hr> Easiness <hr> Helfullness <hr> Clarity <hr> Easiness <hr> Helfullness <hr> Clarity <hr> Easiness <hr> Helfullness <hr> Clarity <hr> Easiness <hr> Helfullness <hr> Clarity <hr> Easiness <hr> Helfullness <hr> Clarity <hr> Easiness <hr> Helfullness <hr> Clarity <hr>
+  </div>
+  <div id="professor_pop_bottom"></div>
+  <div id="next"><div id="close" >Close</div></div>
+</div>
+
+
+
+
+
+
+
+<script>
+    $("#professor_full_profile").click(function() {
+        $("#professor_profile").show().animate({'height': '600px'});
+    });
+
+    $("#x").click(function() {
+        $("#professor_profile").animate({'height': 0}, 'fast', function(){ $(this).hide(); });
+    });
+    $("#close").click(function() {
+        $("#professor_profile").animate({'height': 0}, 'fast', function(){ $(this).hide(); });
+    });
+</script>

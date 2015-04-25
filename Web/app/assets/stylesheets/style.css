@@ -1,4 +1,4 @@
-header{
+header {
     width: 100%;
     height: 35px;
     margin-top: 0px;
@@ -23,18 +23,110 @@ header a {
     line-height: 40px;
 }
 
+#professor_profile {
+    margin-right: auto;
+    margin-left: auto;
+    width:500px; height:200px;
+    border: 1px solid #888;
+    Background-color: #fff;
+    border-radius: 15px;
+    box-shadow: -1px 1px 2px #888888;
+    position:relative;
+}
+
 #professor_full_profile {
-    width: 200px;
+    width: 170px;
     height: 20px;
     text-align: center;
-    line-height: 20px;
+    font-size: 12px;
     border-radius: 40px;
     border: 1px solid #888;
     Background-color: #fff;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    position:relative;
 }
 
-#professor_full_profile:hover{
+#professor_full_profile:hover {
     color: #fff;
-    Background-color: #B2E6FF;
+    Background-color: #CCC;
+}
+
+#x {
+    border: 1px solid #888;
+    Background-color: #fff;
+    border-radius: 50px;
+    margin-top: -166px;
+    margin-right: 5px;
+    float: right;
+    position:relative;
+}
+
+#x:hover{
+    color: #fff;
+    Background-color: #CCC;
+}
+
+#close {
+    margin-right: 25px;
+    margin-top: -35px;
+    text-decoration: underline;
+    float: right;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    position:relative;
+    z-index: 2;
+}
+
+#content{
+    width: 425px;
+    height: 510px;
+    background-color: #fff;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -110px;
+    overflow: scroll;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    position:relative;
+    z-index: 0;
+}
+
+#professor_pop_top {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    opacity: 0.9;
+    background-color: #fff;
+    width: 450px;
+    height: 150px;
+    border-bottom: 1px solid #000;
+    position:relative;
+    z-index: 1;
+}
+
+#professor_name {
+    margin-left: 50px;
+    margin-top: -30px;
+    font-size: 30px;
+    top: 50%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    position: relative;
+    float: left;
+}
+
+#professor_pop_image {
+    margin-left: 50px;
+    float: left;
+}
+
+#professor_pop_bottom {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -35px;
+    opacity: .9;
+    background-color: #fff;
+    width: 450px;
+    height: 60px;
+    border-top: 1px solid #000;
+    position:relative;
+    z-index: 1;
 }
