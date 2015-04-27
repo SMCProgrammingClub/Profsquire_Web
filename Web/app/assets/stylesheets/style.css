@@ -56,10 +56,11 @@ header a {
     border: 1px solid #888;
     Background-color: #fff;
     border-radius: 50px;
-    margin-top: -166px;
-    margin-right: 5px;
+    margin-top: -164px;
+    margin-right: 7px;
     float: right;
     position:relative;
+    z-index: 10;
     cursor: pointer; cursor: hand;
 }
 
@@ -132,4 +133,30 @@ header a {
     border-top: 1px solid #000;
     position:relative;
     z-index: 1;
+}
+
+#catagory_container {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #999;
+    font-size: 20px;
+}
+
+#catagory_container_bottom {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+}
+
+#catagory {
+    position: relative;
+    top: 20%;
+    float: left;
+}
+
+#score {
+    position: relative;
+    top: 20%;
+    color: #5cc7f2;
+    float: right;
 }

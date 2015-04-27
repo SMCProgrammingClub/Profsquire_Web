@@ -13,8 +13,29 @@
 
   <div id="next"><button id="x" >X</button></div>
   <div id="content">
-   <br><br><br><br><br> Easiness <hr> Helfullness <hr> Clarity <hr> Easiness <hr> Helfullness <hr> Clarity <hr> Easiness <hr> Helfullness <hr> Clarity <hr> Easiness <hr> Helfullness <hr> Clarity <hr> Easiness <hr> Helfullness <hr> Clarity <hr> Easiness <hr> Helfullness <hr> Clarity <hr> Easiness <hr> Helfullness <hr> Clarity <hr> Easiness <hr> Helfullness <hr> Clarity <hr>
+   <br><br><br><br><br>
+    <div id="catagory_container"><div id="catagory">Gender:</div><div id="score">Male</div></div>
+    <div id="catagory_container"><div id="catagory">Accent:</div><div id="score">Male</div></div>
+    <div id="catagory_container"><div id="catagory">Enthusiasm:</div><div id="score">Male</div></div>
+    <div id="catagory_container"><div id="catagory">Clarity:</div><div id="score">Male</div></div>
+    <div id="catagory_container"><div id="catagory">Helpfulness:</div><div id="score">Male</div></div>
+    <div id="catagory_container"><div id="catagory">Likeability:</div><div id="score">Male</div></div>
+    <div id="catagory_container"><div id="catagory">Patience Level:</div><div id="score">Male</div></div>
+    <div id="catagory_container"><div id="catagory">Homework Difficulty:</div><div id="score">Male</div></div>
+    <div id="catagory_container"><div id="catagory">Gives Credit For Homework?</div><div id="score">Male</div></div>
+    <div id="catagory_container"><div id="catagory">Test Difficulty:</div><div id="score">Male</div></div>
+    <div id="catagory_container"><div id="catagory">Gives Study Guides?</div><div id="score">Male</div></div>
+    <div id="catagory_container"><div id="catagory">is Study Guide Helpful?</div><div id="score">Male</div></div>
+    <div id="catagory_container"><div id="catagory">Hours Needed Per Week:</div><div id="score">Male</div></div>
+    <div id="catagory_container"><div id="catagory">Gives Extra Credit?</div><div id="score">Male</div></div>
+    <div id="catagory_container"><div id="catagory">Partial Credit on Exams?</div><div id="score">Male</div></div>
+    <div id="catagory_container"><div id="catagory">Curves Course Grade?</div><div id="score">Male</div></div>
+    <div id="catagory_container"><div id="catagory">Curves Test Grade?</div><div id="score">Male</div></div>
+    <div id="catagory_container_bottom"><div id="catagory">Do I Need the Book?</div><div id="score">Male</div></div>
+    <br><br>
+
   </div>
+
   <div id="professor_pop_bottom"></div>
   <div id="next"><div id="close" >Close</div></div>
 </div>
@@ -26,14 +47,25 @@
 
 
 <script>
-    $("#professor_full_profile").click(function() {
-        $("#professor_profile").show().animate({'height': '600px'});
-    });
 
+    var isClicked = true;
+
+    $("#professor_full_profile").click(function() {
+        if (isClicked) {
+            $("#professor_profile").show().animate({'height': '600px'});
+            isClicked = false;
+        }else{
+            $("#professor_profile").animate({'height': 0}, 'fast', function(){ $(this).hide(); });
+            isClicked = true;
+        }
+    });
     $("#x").click(function() {
         $("#professor_profile").animate({'height': 0}, 'fast', function(){ $(this).hide(); });
+        isClicked = true;
     });
     $("#close").click(function() {
         $("#professor_profile").animate({'height': 0}, 'fast', function(){ $(this).hide(); });
+        isClicked = true;
     });
+
 </script>
