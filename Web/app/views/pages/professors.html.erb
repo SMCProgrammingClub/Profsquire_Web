@@ -3,7 +3,6 @@
 <button id="professor_full_profile">View Full Profile</button>
 
 
-
 <div id="professor_profile" style= "display: none;">
 
   <div id="professor_pop_top">
@@ -14,24 +13,237 @@
   <div id="next"><button id="x" >X</button></div>
   <div id="content">
    <br><br><br><br><br>
-    <div id="catagory_container"><div id="catagory">Gender:</div><div id="score">Male</div></div>
-    <div id="catagory_container"><div id="catagory">Accent:</div><div id="score">Male</div></div>
-    <div id="catagory_container"><div id="catagory">Enthusiasm:</div><div id="score">Male</div></div>
-    <div id="catagory_container"><div id="catagory">Clarity:</div><div id="score">Male</div></div>
-    <div id="catagory_container"><div id="catagory">Helpfulness:</div><div id="score">Male</div></div>
-    <div id="catagory_container"><div id="catagory">Likeability:</div><div id="score">Male</div></div>
-    <div id="catagory_container"><div id="catagory">Patience Level:</div><div id="score">Male</div></div>
-    <div id="catagory_container"><div id="catagory">Homework Difficulty:</div><div id="score">Male</div></div>
-    <div id="catagory_container"><div id="catagory">Gives Credit For Homework?</div><div id="score">Male</div></div>
-    <div id="catagory_container"><div id="catagory">Test Difficulty:</div><div id="score">Male</div></div>
-    <div id="catagory_container"><div id="catagory">Gives Study Guides?</div><div id="score">Male</div></div>
-    <div id="catagory_container"><div id="catagory">is Study Guide Helpful?</div><div id="score">Male</div></div>
-    <div id="catagory_container"><div id="catagory">Hours Needed Per Week:</div><div id="score">Male</div></div>
-    <div id="catagory_container"><div id="catagory">Gives Extra Credit?</div><div id="score">Male</div></div>
-    <div id="catagory_container"><div id="catagory">Partial Credit on Exams?</div><div id="score">Male</div></div>
-    <div id="catagory_container"><div id="catagory">Curves Course Grade?</div><div id="score">Male</div></div>
-    <div id="catagory_container"><div id="catagory">Curves Test Grade?</div><div id="score">Male</div></div>
-    <div id="catagory_container_bottom"><div id="catagory">Do I Need the Book?</div><div id="score">Male</div></div>
+
+    <div id="category_container"><div id="category">Gender:</div>
+      <div id="score">
+        <%if(Professor.find(1).gender)%>
+            <%= "Male" %>
+        <% else %>
+            <%= "Female" %>
+        <% end %>
+       </div>
+    </div>
+
+    <div id="category_container"><div id="category">Accent:</div>
+      <div id="score">
+        <%case (Professor.find(1).accent)%>
+            <%when 1%>
+                <%= "None" %>
+            <%when 2%>
+                <%= "Barely Noticable" %>
+            <%when 3%>
+                <%= "Moderate" %>
+            <%when 4%>
+                <%= "Thick" %>
+            <%when 5%>
+                <%= "Heavy" %>
+        <% end %>
+      </div>
+    </div>
+
+    <div id="category_container"><div id="category">Enthusiasm:</div>
+      <div id="score">
+        <%case (Professor.find(1).enthusiasm)%>
+            <%when 1%>
+                <%= "Inadequate" %>
+            <%when 2%>
+                <%= "Below Average" %>
+            <%when 3%>
+                <%= "Average" %>
+            <%when 4%>
+                <%= "Above Average" %>
+            <%when 5%>
+                <%= "Excellent" %>
+        <% end %>
+      </div>
+    </div>
+
+    <div id="category_container"><div id="category">Clarity:</div>
+      <div id="score">
+        <%case (Professor.find(1).clarity)%>
+            <%when 1%>
+                <%= "Inadequate" %>
+            <%when 2%>
+                <%= "Below Average" %>
+            <%when 3%>
+                <%= "Average" %>
+            <%when 4%>
+                <%= "Above Average" %>
+            <%when 5%>
+                <%= "Excellent" %>
+        <% end %>
+      </div>
+    </div>
+
+    <div id="category_container"><div id="category">Helpfulness:</div>
+      <div id="score">
+        <%case (Professor.find(1).helpfulness)%>
+            <%when 1%>
+                <%= "Inadequate" %>
+            <%when 2%>
+                <%= "Below Average" %>
+            <%when 3%>
+                <%= "Average" %>
+            <%when 4%>
+                <%= "Above Average" %>
+            <%when 5%>
+                <%= "Excellent" %>
+        <% end %>
+      </div>
+    </div>
+    <div id="category_container"><div id="category">Likeability:</div>
+      <div id="score">
+        <%case (Professor.find(1).likeability)%>
+        <%when 1%>
+            <%= "Inadequate" %>
+        <%when 2%>
+            <%= "Below Average" %>
+        <%when 3%>
+            <%= "Average" %>
+        <%when 4%>
+            <%= "Above Average" %>
+        <%when 5%>
+            <%= "Excellent" %>
+        <% end %>
+      </div>
+    </div>
+
+    <div id="category_container"><div id="category">Patience Level:</div>
+      <div id="score">
+        <%case (Professor.find(1).patience)%>
+        <%when 1%>
+            <%= "Inadequate" %>
+        <%when 2%>
+            <%= "Below Average" %>
+        <%when 3%>
+            <%= "Average" %>
+        <%when 4%>
+            <%= "Above Average" %>
+        <%when 5%>
+            <%= "Excellent" %>
+        <% end %>
+      </div>
+    </div>
+
+    <div id="category_container"><div id="category">Homework Difficulty:</div>
+      <div id="score">
+        <%case (Professor.find(1).hwDifficulty)%>
+        <%when 1%>
+            <%= "Really Easy" %>
+        <%when 2%>
+            <%= "Easy" %>
+        <%when 3%>
+            <%= "Average" %>
+        <%when 4%>
+            <%= "Hard" %>
+        <%when 5%>
+            <%= "Impossible" %>
+        <% end %>
+      </div>
+    </div>
+
+    <div id="category_container"><div id="category">Gives Credit For Homework?</div>
+      <div id="score">
+        <%if(Professor.find(1).givesHwCredit)%>
+            <%= "Yes" %>
+        <% else %>
+            <%= "No" %>
+        <% end %>
+      </div>
+    </div>
+
+    <div id="category_container"><div id="category">Test Difficulty:</div>
+      <div id="score">
+        <%case (Professor.find(1).testDifficulty)%>
+        <%when 1%>
+            <%= "Really Easy" %>
+        <%when 2%>
+            <%= "Easy" %>
+        <%when 3%>
+            <%= "Average" %>
+        <%when 4%>
+            <%= "Hard" %>
+        <%when 5%>
+            <%= "Impossible" %>
+        <% end %>
+      </div>
+    </div>
+
+    <div id="category_container"><div id="category">Gives Study Guides?</div>
+      <div id="score">
+        <%if(Professor.find(1).givesStudyGuides)%>
+            <%= "Yes" %>
+        <% else %>
+            <%= "No" %>
+        <% end %>
+      </div>
+    </div>
+
+    <div id="category_container"><div id="category">is Study Guide Helpful?</div>
+      <div id="score">
+        <%if(Professor.find(1).isStudyGuideHelpful)%>
+            <%= "Yes" %>
+        <% else %>
+            <%= "No" %>
+        <% end %>
+      </div>
+    </div>
+
+    <div id="category_container"><div id="category">Hours Needed Per Week:</div>
+      <div id="score">
+        <%= Professor.find(1).hoursPerWeek %>
+      </div>
+    </div>
+
+    <div id="category_container"><div id="category">Gives Extra Credit?</div>
+      <div id="score">
+        <%if(Professor.find(1).givesExtraCredit)%>
+            <%= "Yes" %>
+        <% else %>
+            <%= "No" %>
+        <% end %>
+      </div>
+    </div>
+
+    <div id="category_container"><div id="category">Partial Credit on Exams?</div>
+      <div id="score">
+        <%if(Professor.find(1).partialCredExams)%>
+            <%= "Yes" %>
+        <% else %>
+            <%= "No" %>
+        <% end %>
+      </div>
+    </div>
+
+    <div id="category_container"><div id="category">Curves Course Grade?</div>
+      <div id="score">
+        <%if(Professor.find(1).curvesCourseGrade)%>
+            <%= "Yes" %>
+        <% else %>
+            <%= "No" %>
+        <% end %>
+      </div>
+    </div>
+
+    <div id="category_container"><div id="category">Curves Test Grade?</div>
+      <div id="score">
+        <%if(Professor.find(1).curvesTestGrade)%>
+            <%= "Yes" %>
+        <% else %>
+            <%= "No" %>
+        <% end %>
+      </div>
+    </div>
+
+    <div id="category_container_bottom"><div id="category">Do I Need the Book?</div>
+      <div id="score">
+        <%if(Professor.find(1).needBook)%>
+            <%= "Yes" %>
+        <% else %>
+            <%= "No" %>
+        <% end %>
+      </div>
+    </div>
     <br><br>
 
   </div>
