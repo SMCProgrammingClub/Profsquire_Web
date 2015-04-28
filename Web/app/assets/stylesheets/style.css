@@ -1,11 +1,8 @@
 header {
     width: 100%;
     height: 35px;
-    margin-top: 0px;
     color: #fff;
     background-color: #666666;
-    background-position: center;
-    background-position: bottom;
 }
 
 header li {
@@ -44,7 +41,7 @@ header a {
     Background-color: #fff;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     position:relative;
-    cursor: pointer; cursor: hand;
+    cursor: hand;
 }
 
 #professor_full_profile:hover {
@@ -61,7 +58,7 @@ header a {
     float: right;
     position:relative;
     z-index: 10;
-    cursor: pointer; cursor: hand;
+    cursor: hand;
 }
 
 #x:hover{
@@ -77,7 +74,7 @@ header a {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     position:relative;
     z-index: 2;
-    cursor: pointer; cursor: hand;
+    cursor: hand;
 }
 
 #content {
