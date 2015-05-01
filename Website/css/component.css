@@ -183,7 +183,7 @@ body,
 .sb-search {
 	position: relative;
 	margin-top: 10px;
-	width: 0%;
+	width: 100%;
 	min-width: 60px;
 	height: 60px;
 	float: right;
@@ -271,25 +271,6 @@ body,
 	content: "\e000";
 }
 
-
-
-/* Open state */
-.sb-search.sb-search-open,
-.no-js .sb-search {
-	width: 100%;
-}
-
-.sb-search.sb-search-open .sb-icon-search,
-.no-js .sb-search .sb-icon-search {
-	background: #8FB8DB;
-	color: #fff;
-	z-index: 11;
-}
-
-.sb-search.sb-search-open .sb-search-submit,
-.no-js .sb-search .sb-search-submit {
-	z-index: 90;
-}
 
 
 /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
