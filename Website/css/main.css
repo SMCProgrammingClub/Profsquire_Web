@@ -49,6 +49,8 @@ a:hover, a:focus {
 	font-weight: 300;
 	font-size: 2.625em;
 	line-height: 1.3;
+	text-shadow: 1px 1px 5px #000000,
++				 -1px -1px 5px #000000;
 }
 
 .smc-header span {
