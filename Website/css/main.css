@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 body {
-	background: #ffffff;
+	background: #ffffff; /* not main color background */
 	color: #ffffff;
 	font-weight: 300;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
@@ -39,7 +39,7 @@ a:hover, a:focus {
 .smc-header {
 	margin: 0 auto 3em;
 	padding: 0em;
-	padding-bottom: 0;    
+	padding-bottom: 0;       
 	text-align: center;
 }
 
@@ -49,8 +49,6 @@ a:hover, a:focus {
 	font-weight: 300;
 	font-size: 2.625em;
 	line-height: 1.3;
-	text-shadow: 1px 1px 5px #000000,
-				 -1px -1px 5px #000000;
 }
 
 .smc-header span {
@@ -66,17 +64,14 @@ a:hover, a:focus {
 	height: 150px;
 
 }
-
-
 /*Navigation Bar */
 .smc-top {
 	width: 100%;
-	height: 4em;
 	text-transform: uppercase;
 	font-size: 0.90em;
-	line-height: 4.2;
+	line-height: 1;
 	font-weight: 400;
-	background: rgba(255,255,255,0.5);
+	background: rgba(255,255,255,0.6);
 }
 
 .smc-top a {
@@ -105,25 +100,60 @@ a:hover, a:focus {
 	float: center;
 }
 .smc-top span.center a {
-	display: inline-block;
-	float: center;
-	max-width: 10em;
-	margin: 0 auto;
 	padding: 0.6em 1.2em;
-	margin: 3px 2px;
-	border-radius: 2px;
+	max-width: 30em;
+	margin: 0 auto;
+}
+
+.smc-top button {
+	border: none;
+	outline: none;
+	float: left;
+	padding: 2em 1.2em;
+	max-width: 4em;
+	background: url('../img/burger.png') center right no-repeat;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.smc-top button:hover{
+	border: none;
+	outline: none;
+	float: left;
+	padding: 2em 1.2em;
+	max-width: 4em;
+	background: url('../img/burger-hover.png') center right no-repeat;
+
+	-webkit-transform: rotate(720deg);
+	transform: rotate(720deg);
+	transition: 2s;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
 }
 
 
 /* search bar */
 .main {
+	float:center;
 	max-width: 30em;
 	margin: 0 auto;
+	outline-style: solid;
+    outline-width: 1px;
+    outline-color: #8FB8DB;
 }
-
 .open-search {
 	position: relative;
-	margin-top: 10px;
+	margin-top: 0px;
 	width: 0%;
 	min-width: 60px;
 	height: 60px;
@@ -135,23 +165,10 @@ a:hover, a:focus {
 	-webkit-backface-visibility: hidden;
 }
 
-button {
-	border: none;
-	padding: 2em 1.8em;
-	padding-bottom: 15px;
-	background: url('../img/burger.png') center right no-repeat;
-	color: #fff;
-	font-family: 'Lato', Calibri, Arial, sans-serif;
-	font-size: 1em;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	cursor: pointer;
-	display: inline-block;
-	margin: 3px 2px;
-	border-radius: 2px;
-}
+
 
 .sidebar-logo {
+
 	display:block;
 	padding-top: 1em;
 	text-align:center;
@@ -159,13 +176,17 @@ button {
 }
 
 .sidebar-logo img{
+
 	width: 100px;
 	height: 100px;
 
 
 }
 
-@media screen and (max-width: 25em) {
+
+
+
+@media screen and (max-width: 10em) {
 
 	.smc-header {
 		font-size: 80%;

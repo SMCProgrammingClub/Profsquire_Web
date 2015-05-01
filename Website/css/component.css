@@ -183,7 +183,7 @@ body,
 .sb-search {
 	position: relative;
 	margin-top: 10px;
-	width: 100%;
+	width: 0%;
 	min-width: 60px;
 	height: 60px;
 	float: right;
@@ -192,6 +192,7 @@ body,
 	-moz-transition: width 0.3s;
 	transition: width 0.3s;
 	-webkit-backface-visibility: hidden;
+
 }
 
 .sb-search-input {
@@ -209,6 +210,7 @@ body,
 	font-family: inherit;
 	font-size: 20px;
 	color: #2c3e50;
+
 }
 
 .sb-search-input::-webkit-input-placeholder {
@@ -240,6 +242,7 @@ body,
 	line-height: 60px;
 	text-align: center;
 	cursor: pointer;
+
 }
 
 .sb-search-submit {
@@ -256,6 +259,9 @@ body,
 .sb-icon-search {
 	color: #000000;
 	background: #ffffff;
+	outline-style: solid;
+    outline-width: 1px;
+    outline-color: #8FB8DB;
 	z-index: 90;
 	font-size: 22px;
 	font-family: 'icomoon';
@@ -266,6 +272,10 @@ body,
 	text-transform: none;
 	-webkit-font-smoothing: antialiased;
 }
+.sb-icon-search:hover {
+	background:  #8FB8DB;
+}
+
 
 .sb-icon-search:before {
 	content: "\e000";
@@ -273,11 +283,83 @@ body,
 
 
 
+/* Open state */
+.sb-search.sb-search-open,
+.no-js .sb-search {
+	width: 100%;
+}
+
+.sb-search.sb-search-open .sb-icon-search,
+.no-js .sb-search .sb-icon-search {
+	background: #8FB8DB;
+	color: #fff;
+	z-index: 11;
+}
+
+.sb-search.sb-search-open .sb-search-submit,
+.no-js .sb-search .sb-search-submit {
+	z-index: 90;
+}
+
+
 /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
 .no-csstransforms3d .st-pusher,
 .no-js .st-pusher {
 	padding-left: 250px;
 }
+
+
+/* Second search bar with no JS */
+
+.sb-searchtwo {
+	position: relative;
+	margin-top: 10px;
+	width: 100%;
+	min-width: 60px;
+	height: 60px;
+	/*overflow: hidden;*/
+
+}
+
+.sb-searchtwo-inputtwo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	outline: none;
+	background: #fff;
+	width: 100%;
+	height: 60px;
+	margin: 0;
+	z-index: 10;
+	padding: 20px 65px 20px 20px;
+	font-family: inherit;
+	font-size: 20px;
+	color: #2c3e50;
+}
+
+.sb-searchtwo-submittwo  {
+	width: 60px;
+	height: 60px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	line-height: 60px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.sb-searchtwo-submittwo {
+	background: #fff; /* IE needs this */
+	border: none;
+	outline: none;
+	z-index: -1;
+}
+
+
 
 
 
