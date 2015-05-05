@@ -210,7 +210,7 @@ a:hover, a:focus {
 
 }
 
-@media screen and (max-width: 1em) {
+@media screen and (max-width: 510px) {
 
 	.smc-top img{
 
