@@ -61,7 +61,7 @@ a:hover, a:focus {
 }
 
 .smc-header img{
-
+	max-width: 100%;
 	width: 150px;
 	height: 150px;
 
@@ -91,6 +91,7 @@ a:hover, a:focus {
 .smc-top span.right a {
 	display: block;
 	float: left;
+	max-width: 100%;
 }
 
 .smc-top span.left  {
@@ -100,10 +101,11 @@ a:hover, a:focus {
 
 .smc-top span.center {
 	float: center;
+
 }
 .smc-top span.center a {
 	padding: 0.6em 1.2em;
-	max-width: 30em;
+	max-width: 11em;
 	margin: 0 auto;
 }
 
@@ -131,8 +133,8 @@ a:hover, a:focus {
 	max-width: 4em;
 	background: url('../img/burger-hover.png') center right no-repeat;
 
-	-webkit-transform: rotate(720deg);
-	transform: rotate(720deg);
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
 	transition: 2s;
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -142,7 +144,11 @@ a:hover, a:focus {
     user-select: none;
 
 }
+.smc-top img{
 
+	max-width: 100%;
+
+}
 
 /* search bar */
 .main {
@@ -200,6 +206,16 @@ a:hover, a:focus {
 
 	.smc-icon span {
 		display: none;
+	}
+
+}
+
+@media screen and (max-width: 1em) {
+
+	.smc-top img{
+
+		display: none;
+
 	}
 
 }

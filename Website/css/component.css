@@ -183,10 +183,9 @@ body,
 .sb-search {
 	position: relative;
 	margin-top: 10px;
-	width: 0%;
+	width: 100%;
 	min-width: 60px;
-	height: 60px;
-	float: right;
+	height: 50px;
 	overflow: hidden;
 	-webkit-transition: width 0.3s;
 	-moz-transition: width 0.3s;
@@ -203,12 +202,12 @@ body,
 	outline: none;
 	background: #fff;
 	width: 100%;
-	height: 60px;
+	height: 50px;
 	margin: 0;
 	z-index: 10;
-	padding: 20px 65px 20px 20px;
+	padding: 20px 65px 20px 10px;
 	font-family: inherit;
-	font-size: 20px;
+	font-size: 13px;
 	color: #2c3e50;
 
 }
@@ -232,14 +231,14 @@ body,
 .sb-icon-search,
 .sb-search-submit  {
 	width: 60px;
-	height: 60px;
+	height: 50px;
 	display: block;
 	position: absolute;
 	right: 0;
 	top: 0;
 	padding: 0;
 	margin: 0;
-	line-height: 60px;
+	line-height: 50px;
 	text-align: center;
 	cursor: pointer;
 
@@ -259,11 +258,9 @@ body,
 .sb-icon-search {
 	color: #000000;
 	background: #ffffff;
-	outline-style: solid;
-    outline-width: 1px;
-    outline-color: #8FB8DB;
 	z-index: 90;
-	font-size: 22px;
+	font-size: 20px;
+	height: 50px;
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -286,7 +283,8 @@ body,
 /* Open state */
 .sb-search.sb-search-open,
 .no-js .sb-search {
-	width: 100%;
+    position: relative;
+    width: 100%;
 }
 
 .sb-search.sb-search-open .sb-icon-search,
@@ -294,11 +292,13 @@ body,
 	background: #8FB8DB;
 	color: #fff;
 	z-index: 11;
+
 }
 
 .sb-search.sb-search-open .sb-search-submit,
 .no-js .sb-search .sb-search-submit {
 	z-index: 90;
+
 }
 
 
@@ -338,6 +338,7 @@ body,
 	color: #2c3e50;
 }
 
+.sb-icontwo-searchtwo,
 .sb-searchtwo-submittwo  {
 	width: 60px;
 	height: 60px;
@@ -358,7 +359,31 @@ body,
 	outline: none;
 	z-index: -1;
 }
+.sb-icontwo-searchtwo {
+	color: #000000;
+	background: #ffffff;
+	outline-style: solid;
+    outline-width: 1px;
+    outline-color: #8FB8DB;
+	z-index: 90;
+	font-size: 22px;
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+}
 
+.sb-icontwo-searchtwo:hover {
+	background:  #8FB8DB;
+}
+
+
+.sb-icontwo-searchtwo:before {
+	content: "\e000";
+}
 
 
 
