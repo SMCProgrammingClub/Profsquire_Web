@@ -191,6 +191,14 @@ a:hover, a:focus {
 
 }
 
+@media screen and (max-width: 510px) {
+	
+	.smc-header {
+		font-size: 70%;
+	}
+	
+}
+
 
 /*@media screen and (max-width: 10em) {
 
