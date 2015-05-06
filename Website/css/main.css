@@ -105,7 +105,7 @@ a:hover, a:focus {
 }
 .smc-top span.center a {
 	padding: 0.6em 1.2em;
-	max-width: 11em;
+	/*max-width: 11em;*/
 	margin: 0 auto;
 }
 
@@ -192,9 +192,7 @@ a:hover, a:focus {
 }
 
 
-
-
-@media screen and (max-width: 10em) {
+/*@media screen and (max-width: 10em) {
 
 	.smc-header {
 		font-size: 80%;
@@ -208,17 +206,8 @@ a:hover, a:focus {
 		display: none;
 	}
 
-}
+}*/
 
-@media screen and (max-width: 510px) {
-
-	.smc-top img{
-
-		display: none;
-
-	}
-
-}
 
 /* These are our social media icons, add any other fontfaces or icons below these */ 
 

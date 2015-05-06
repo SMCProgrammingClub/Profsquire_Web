@@ -183,7 +183,7 @@ body,
 .sb-search {
 	position: relative;
 	margin-top: 10px;
-	width: 100%;
+	width: 350px;
 	min-width: 60px;
 	height: 50px;
 	overflow: hidden;
@@ -385,6 +385,18 @@ body,
 	content: "\e000";
 }
 
+@media screen and (max-width: 510px) {
+	
+	.smc-top img{
+		display: none;
+	}
+	
+	.sb-search {
+		width: 60%;
+		min-width: 60px;
+	}
+
+}
 
 
 
