@@ -191,7 +191,7 @@ body,
 	-moz-transition: width 0.3s;
 	transition: width 0.3s;
 	-webkit-backface-visibility: hidden;
-
+	border-radius: 10px;
 }
 
 .sb-search-input {
@@ -209,6 +209,7 @@ body,
 	font-family: inherit;
 	font-size: 13px;
 	color: #2c3e50;
+	border-radius: 0 10px 10px 0;
 
 }
 
@@ -241,7 +242,6 @@ body,
 	line-height: 50px;
 	text-align: center;
 	cursor: pointer;
-
 }
 
 .sb-search-submit {
@@ -318,6 +318,7 @@ body,
 	min-width: 60px;
 	height: 60px;
 	/*overflow: hidden;*/
+	border-radius: 10px;
 
 }
 
@@ -336,6 +337,7 @@ body,
 	font-family: inherit;
 	font-size: 20px;
 	color: #2c3e50;
+	border-radius: 10px;
 }
 
 .sb-icontwo-searchtwo,
@@ -351,6 +353,7 @@ body,
 	line-height: 60px;
 	text-align: center;
 	cursor: pointer;
+	border-radius: 0 10px 10px 0;
 }
 
 .sb-searchtwo-submittwo {
