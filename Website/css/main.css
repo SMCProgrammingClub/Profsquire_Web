@@ -105,7 +105,7 @@ a:hover, a:focus {
 }
 .smc-top span.center a {
 	padding: 0.6em 1.2em;
-	/*max-width: 11em;*/
+	/*max-width: 11em; //limits the size of the search bar*/
 	margin: 0 auto;
 }
 
@@ -145,9 +145,7 @@ a:hover, a:focus {
 
 }
 .smc-top img{
-
 	max-width: 100%;
-
 }
 
 /* search bar */
@@ -176,7 +174,6 @@ a:hover, a:focus {
 
 
 .sidebar-logo {
-
 	display:block;
 	padding-top: 1em;
 	text-align:center;
@@ -184,11 +181,8 @@ a:hover, a:focus {
 }
 
 .sidebar-logo img{
-
 	width: 100px;
 	height: 100px;
-
-
 }
 
 @media screen and (max-width: 510px) {
@@ -198,23 +192,6 @@ a:hover, a:focus {
 	}
 	
 }
-
-
-/*@media screen and (max-width: 10em) {
-
-	.smc-header {
-		font-size: 80%;
-	}
-
-	.smc-top {
-		font-size: 120%;
-	}
-
-	.smc-icon span {
-		display: none;
-	}
-
-}*/
 
 
 /* These are our social media icons, add any other fontfaces or icons below these */ 
