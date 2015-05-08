@@ -317,8 +317,8 @@ body,
 	width: 100%;
 	min-width: 60px;
 	height: 60px;
-	/*overflow: hidden;*/
 	border-radius: 10px;
+	box-shadow: -5px 0 5px -5px #333;
 
 }
 
@@ -365,9 +365,6 @@ body,
 .sb-icontwo-searchtwo {
 	color: #000000;
 	background: #ffffff;
-	outline-style: solid;
-    outline-width: 1px;
-    outline-color: #8FB8DB;
 	z-index: 90;
 	font-size: 22px;
 	font-family: 'icomoon';

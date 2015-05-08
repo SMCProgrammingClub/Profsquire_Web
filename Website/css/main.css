@@ -125,17 +125,15 @@ a:hover, a:focus {
 }
 
 
-.smc-top button:hover{
+.smc-top button:focus{
 	border: none;
 	outline: none;
 	float: left;
 	padding: 2em 1.2em;
 	max-width: 4em;
-	background: url('../img/burger-hover.png') center right no-repeat;
-
-	-webkit-transform: rotate(360deg);
-	transform: rotate(360deg);
-	transition: 2s;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	transition: 0.5s;
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -153,9 +151,7 @@ a:hover, a:focus {
 	float:center;
 	max-width: 30em;
 	margin: 0 auto;
-	outline-style: solid;
-    outline-width: 1px;
-    outline-color: #8FB8DB;
+	box-shadow: -5px 0 5px -5px #333;
 }
 .open-search {
 	position: relative;
