@@ -62,8 +62,8 @@ a:hover, a:focus {
 
 .smc-header img{
 	max-width: 100%;
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 
 }
 /*Navigation Bar */
@@ -144,6 +144,7 @@ a:hover, a:focus {
 }
 .smc-top img{
 	max-width: 100%;
+	padding-right: 10em;
 }
 
 /* search bar */
@@ -181,13 +182,30 @@ a:hover, a:focus {
 	height: 100px;
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 780px) {
 	
 	.smc-header {
 		font-size: 70%;
 	}
+	.smc-top img{
+		display: none;
+	}
 	
+	.smc-header img{
+	width: 150px;
+	height: 150px;
+	}
 }
+
+@media screen and (max-width: 950px) {
+	
+	.smc-top img{
+	padding-right: 0px;
+}
+
+}
+
+
 
 
 /* These are our social media icons, add any other fontfaces or icons below these */ 
