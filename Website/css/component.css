@@ -192,6 +192,8 @@ body,
 	transition: width 0.3s;
 	-webkit-backface-visibility: hidden;
 	border-radius: 10px;
+	box-shadow: -5px 0 5px -5px #333;
+
 }
 
 .sb-search-input {
@@ -243,6 +245,8 @@ body,
 	text-align: center;
 	cursor: pointer;
 	border-radius: 0 10px 10px 0;
+	box-shadow: -5px 0 5px -5px #333;
+
 
 }
 
@@ -357,6 +361,8 @@ body,
 	text-align: center;
 	cursor: pointer;
 	border-radius: 0 10px 10px 0;
+	box-shadow: -5px 0 5px -5px #333;
+
 }
 
 .sb-searchtwo-submittwo {
