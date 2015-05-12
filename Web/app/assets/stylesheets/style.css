@@ -23,7 +23,7 @@ header a {
 #professor_profile {
     margin-right: auto;
     margin-left: auto;
-    width:500px; height:200px;
+    width: 500px; height: 200px;
     border: 1px solid #888;
     Background-color: #fff;
     border-radius: 15px;
@@ -41,7 +41,7 @@ header a {
     Background-color: #fff;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     position:relative;
-    cursor: hand;
+    cursor: pointer;
 }
 
 #professor_full_profile:hover {
@@ -58,7 +58,7 @@ header a {
     float: right;
     position:relative;
     z-index: 10;
-    cursor: hand;
+    cursor: pointer;
 }
 
 #x:hover{
@@ -74,7 +74,7 @@ header a {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     position:relative;
     z-index: 2;
-    cursor: hand;
+    cursor: pointer;
 }
 
 #content {
@@ -101,7 +101,7 @@ header a {
     height: 150px;
     border-bottom: 1px solid #000;
     position:relative;
-    z-index: 1;
+    z-index: 10;
 }
 
 #professor_name {
