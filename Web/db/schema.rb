@@ -11,30 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150427070847) do
-
-  create_table "professors", force: true do |t|
-    t.boolean  "gender"
-    t.integer  "accent"
-    t.integer  "enthusiasm"
-    t.integer  "clarity"
-    t.integer  "helpfulness"
-    t.integer  "likeability"
-    t.integer  "patience"
-    t.integer  "hwDifficulty"
-    t.boolean  "givesHwCredit"
-    t.integer  "testDifficulty"
-    t.boolean  "givesStudyGuides"
-    t.boolean  "isStudyGuideHelpful"
-    t.integer  "hoursPerWeek"
-    t.boolean  "givesExtraCredit"
-    t.boolean  "partialCredExams"
-    t.boolean  "curvesCourseGrade"
-    t.boolean  "curvesTestGrade"
-    t.boolean  "needBook"
-    t.text     "comments"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 0) do
 
 end
