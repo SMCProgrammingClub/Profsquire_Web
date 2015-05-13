@@ -11,6 +11,53 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150513001114) do
+
+  create_table "courses", force: true do |t|
+    t.integer  "a"
+    t.integer  "b"
+    t.integer  "c"
+    t.integer  "d"
+    t.integer  "f"
+    t.integer  "w"
+    t.integer  "total"
+    t.text     "department"
+    t.text     "subject"
+    t.text     "name"
+    t.integer  "section"
+    t.text     "semester"
+    t.text     "year"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "professors", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "reviews", force: true do |t|
+    t.boolean  "gender"
+    t.integer  "accent"
+    t.integer  "enthusiasm"
+    t.integer  "clarity"
+    t.integer  "helpfulness"
+    t.integer  "likeability"
+    t.integer  "patience"
+    t.integer  "homework_difficulty"
+    t.boolean  "homework_credit"
+    t.integer  "test_difficulty"
+    t.boolean  "study_guides"
+    t.integer  "study_guide_helpfulness"
+    t.integer  "hours_per_week"
+    t.boolean  "extra_credit"
+    t.boolean  "partial_credit_on_exams"
+    t.boolean  "curved_course_grade"
+    t.boolean  "curved_test_grade"
+    t.boolean  "book_needed"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

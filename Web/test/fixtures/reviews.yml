@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gender: false
+  accent: 1
+  enthusiasm: 1
+  clarity: 1
+  helpfulness: 1
+  likeability: 1
+  patience: 1
+  homework_difficulty: 1
+  homework_credit: false
+  test_difficulty: 1
+  study_guides: false
+  study_guide_helpfulness: 1
+  hours_per_week: 1
+  extra_credit: false
+  partial_credit_on_exams: false
+  curved_course_grade: false
+  curved_test_grade: false
+  book_needed: false
+
+two:
+  gender: false
+  accent: 1
+  enthusiasm: 1
+  clarity: 1
+  helpfulness: 1
+  likeability: 1
+  patience: 1
+  homework_difficulty: 1
+  homework_credit: false
+  test_difficulty: 1
+  study_guides: false
+  study_guide_helpfulness: 1
+  hours_per_week: 1
+  extra_credit: false
+  partial_credit_on_exams: false
+  curved_course_grade: false
+  curved_test_grade: false
+  book_needed: false

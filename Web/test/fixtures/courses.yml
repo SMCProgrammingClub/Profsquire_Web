@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  a: 1
+  b: 1
+  c: 1
+  d: 1
+  f: 1
+  w: 1
+  total: 1
+  department: MyText
+  subject: MyText
+  name: MyText
+  section: 1
+  semester: MyText
+  year: MyText
+
+two:
+  a: 1
+  b: 1
+  c: 1
+  d: 1
+  f: 1
+  w: 1
+  total: 1
+  department: MyText
+  subject: MyText
+  name: MyText
+  section: 1
+  semester: MyText
+  year: MyText
