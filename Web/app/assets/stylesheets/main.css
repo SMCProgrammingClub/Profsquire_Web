@@ -2,7 +2,7 @@
 
 body {
     background: #ffffff; /* not main color background */
-    color: #ffffff;
+    color: #000000;
     font-weight: 300;
     font-family: 'Lato', Calibri, Arial, sans-serif;
 }
@@ -277,3 +277,4 @@ a:hover, a:focus {
 
 
 }
+
