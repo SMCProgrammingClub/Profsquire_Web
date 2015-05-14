@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
 
   resources :pages
-
+  root 'pages#index'
   get "/index", to:"pages#index"
+  get "/professor", to:"pages#professor"
   get "/professors", to:"pages#professors"
   get "/contact", to:"pages#contact"
   get "/about", to:"pages#about"
