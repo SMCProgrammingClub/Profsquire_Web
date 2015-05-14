@@ -1,0 +1,45 @@
+<h1>Professor Page</h1>
+
+<button id="professor_full_profile">View Full Profile</button>
+
+
+<div id="professor_profile" style= "display: none;">
+
+  <div id="professor_pop_top">
+    <div id="professor_pop_image"><%= image_tag 'Professor-Bust-Small.png'=> 'Bust' %></div>
+    <div id="professor_name">Jimenez, Ben</div>
+  </div>
+
+  <div id="next"><button id="x" >X</button></div>
+  <div id="content">
+    <br><br><br><br><br>
+
+    <div id="category_container"><div id="category">Gender:</div><div id="score"></div></div>
+    <div id="category_container"><div id="category">Accent:</div><div id="score"></div></div>
+    <div id="category_container"><div id="category">Enthusiasm:</div><div id="score"></div></div>
+    <div id="category_container"><div id="category">Clarity:</div><div id="score"></div></div>
+    <div id="category_container"><div id="category">Helpfulness:</div><div id="score"></div></div>
+    <div id="category_container"><div id="category">Likeability:</div><div id="score"></div></div>
+    <div id="category_container"><div id="category">Patience Level:</div><div id="score"></div></div>
+    <div id="category_container"><div id="category">Homework Difficulty:</div><div id="score"></div></div>
+    <div id="category_container"><div id="category">Gives Credit For Homework?</div><div id="score"></div></div>
+    <div id="category_container"><div id="category">Test Difficulty:</div><div id="score"></div></div>
+    <div id="category_container"><div id="category">Gives Study Guides?</div><div id="score"></div></div>
+    <div id="category_container"><div id="category">is Study Guide Helpful?</div><div id="score"></div></div>
+    <div id="category_container"><div id="category">Hours Needed Per Week:</div><div id="score"></div></div>
+    <div id="category_container"><div id="category">Gives Extra Credit?</div><div id="score"></div></div>
+    <div id="category_container"><div id="category">Partial Credit on Exams?</div><div id="score"></div></div>
+    <div id="category_container"><div id="category">Curves Course Grade?</div><div id="score"></div></div>
+    <div id="category_container"><div id="category">Curves Test Grade?</div><div id="score"></div></div>
+    <div id="category_container_bottom"><div id="category">Do I Need the Book?</div><div id="score"></div></div>
+    <br><br>
+
+  </div>
+
+  <div id="professor_pop_bottom"></div>
+  <div id="next"><div id="close" >Close</div></div>
+</div>
+
+
+<%= javascript_include_tag 'application.js' %>
+
