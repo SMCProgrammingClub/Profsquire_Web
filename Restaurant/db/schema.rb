@@ -11,12 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150515014357) do
+ActiveRecord::Schema.define(version: 20150515000240) do
 
-  create_table "professors", force: true do |t|
+  create_table "customers", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
+
+  create_table "orders", force: :cascade do |t|
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.integer  "customer_id"
+    t.string   "customer_order"
+  end
+
+  add_index "orders", ["customer_id"], name: "index_customer_id"
 
 end
