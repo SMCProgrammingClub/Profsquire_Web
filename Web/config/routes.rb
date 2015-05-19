@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  namespace :api do
+    resources :professors
+  end
+
   resources :pages
   root 'pages#index'
   get "/index", to:"pages#index"
