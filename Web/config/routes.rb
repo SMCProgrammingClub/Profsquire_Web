@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   namespace :api do
     resources :professors
+    resources :courses
+    resources :attributes
   end
 
   resources :pages
