@@ -1,4 +1,0 @@
-SMC Programming Club Learning Resources
-teamtreehouse.com
-codeacademy.com
-https://www.youtube.com/watch?v=gR0YfJrg9pg (for importing grade distribution to table)
