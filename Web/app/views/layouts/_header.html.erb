@@ -1,8 +1,68 @@
-<header>
-  <ul>
+<%= stylesheet_link_tag "main.css" %>
+<%= stylesheet_link_tag "component.css" %>
+<%= stylesheet_link_tag "normalize.css" %>
+<body>
+ <!-- <ul>
     <li><%= link_to "Home", index_path %></li>
     <li><%= link_to "Professors", professors_path %></li>
     <li><%= link_to "Contact", contact_path %></li>
     <li><%= link_to "About", about_path %></li>
-  </ul>
-</header>
+  </ul> -->
+  <div id="st-container" class="st-container">
+
+    <nav class="st-menu st-effect-slide" id="menu">
+      <h2>Menu</h2>
+      <ul>
+        <li><%= link_to "Professors", professor_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Contact", contact_path %></li>
+
+      </ul>
+
+      <h2>
+        <a class="fs2 iconsocial-twitter3"></a>
+        <a class="fs2 iconsocial-facebook3"></a>
+      </h2>
+
+				<span class="sidebar-logo">
+
+                  <%= image_tag ("Logo-Sidebar.png")%>
+				</span>
+
+    </nav>
+
+
+    <!-- content push wrapper -->
+    <div class="st-pusher">
+      <div class="st-content"><!-- wrapper for the content -->
+        <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+
+          <!-- Top Navigation for Menu / Search Bar / Logos -->
+          <div class="smc-top clearfix">
+            <div id="st-trigger-effects"><button class="smc-top" data-effect="st-effect-slide"></button>
+
+              <%= image_tag("Nav-Bar-Logo2.png") %>
+
+              <span class="center"><a id="sb-search" class="sb-search">
+                <form>
+                  <input class="sb-search-input" placeholder="Search Professors. . " type="text" value="" name="search" id="search">
+                  <input class="sb-search-submit" type="submit" value="">
+                  <span class="sb-icon-search"></span>
+                </form>
+						</span></a>
+
+
+              <span class="right"><a class="fs1 iconsocial-twitter3"></a></span>
+              <span class="right"><a class="fs1 iconsocial-facebook3"></a></span>
+
+            </div>
+
+
+
+          </div>
+          <script src='classie.js'></script>
+          <%= javascript_include_tag "classie" %>
+          <%= javascript_include_tag "sidebarEffects" %>
+          <script src='sidebarEffects.js'></script>
+
+</body>
