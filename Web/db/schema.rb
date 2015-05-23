@@ -11,30 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150523053617) do
-
-  create_table "attributes", force: :cascade do |t|
-    t.integer  "professor_id"
-    t.integer  "accent"
-    t.integer  "book_needed"
-    t.integer  "clarity"
-    t.integer  "curves_course_grade"
-    t.integer  "curves_test_grade"
-    t.integer  "enthusiasm"
-    t.integer  "exam_partial_cred"
-    t.integer  "extra_credit"
-    t.integer  "gender"
-    t.integer  "helpfulness"
-    t.integer  "hours_needed"
-    t.integer  "hw_credit"
-    t.integer  "hw_difficulty"
-    t.integer  "likeability"
-    t.integer  "patience"
-    t.integer  "study_guide"
-    t.integer  "test_difficulty"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
-  end
+ActiveRecord::Schema.define(version: 20150523181300) do
 
   create_table "comments", force: :cascade do |t|
     t.integer  "professor_id"
@@ -60,6 +37,29 @@ ActiveRecord::Schema.define(version: 20150523053617) do
     t.integer  "year"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "professor_attributes", force: :cascade do |t|
+    t.integer  "professor_id"
+    t.integer  "accent"
+    t.integer  "book_needed"
+    t.integer  "clarity"
+    t.integer  "curves_course_grade"
+    t.integer  "curves_test_grade"
+    t.integer  "enthusiasm"
+    t.integer  "exam_partial_cred"
+    t.integer  "extra_credit"
+    t.integer  "gender"
+    t.integer  "helpfulness"
+    t.integer  "hours_needed"
+    t.integer  "hw_credit"
+    t.integer  "hw_difficulty"
+    t.integer  "likeability"
+    t.integer  "patience"
+    t.integer  "study_guide"
+    t.integer  "test_difficulty"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
   end
 
   create_table "professors", force: :cascade do |t|

@@ -29,7 +29,7 @@ module Attributes
 
       ## This takes care of creating attribute
       post do
-        Attribute.create!({
+        ProfessorAttribute.create!({
             professor_id: params[:professor_id],
             accent: params[:accent],
             book_needed: params[:book_needed],
@@ -53,14 +53,14 @@ module Attributes
 
 
       get do
-        Attribute.all
+        ProfessorAttribute.all
 
       end
 
 
       # desc "Returns an item by its id."
       get '/:id' do
-        attributes = Attribute.where(professor_id: params[:id] )
+        attributes = ProfessorAttribute.where(professor_id: params[:id] )
 
       end
     end
