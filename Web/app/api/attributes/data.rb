@@ -104,19 +104,30 @@ module Attributes
 
           end
 
+
+
           get do
-            Accent.all
-            BookNeeded.all
-          end
+            #Professor.includes(:accents, :book_neededs).find(params[:id])
+
+            end
 
 
-          desc "Returns an item by its id."
+
+         # desc "Returns an item by its id."
           get '/:id' do
-            course = Accent.where(professor_id: params[:id] )
+           # accent = Accent.where(professor_id: params[:id] )
+            Professor.where(:id =>  params[:id] ).joins(:accents)
+           # BookNeeded.where(:professor_id =>  params[:id] ).joins(:professor)
+
+            #Professor.find(params[:id]).joins(:accents, :book_neededs, :clarities, :curves_course_grades, :curves_test_grades, :enthusiasms, :exam_partial_creds,
+            #      :extra_credits, :genders, :helpfulnesses, :hours_neededs, :hw_credits, :hw_difficulties, :likeabilities, :patiences,
+            #      :study_guides, :test_difficulties).where(professor_id: params[:id] )
+            #Accent.find(params[:id]).BookNeeded.find(params[:id])
+
           end
     end
   end
 end
 
 
-####curl http://localhost:3000/api/v1/attributes_data -d "professor_id=1&accent=1&book_needed=3&clarity=-1&curves_course_grade=-1&curves_test_grade=-1&enthusiasm=-1&exam_partial_cred=-1&extracredit=-1&gender=-1&helpfulness=-1&hoursneeded=-1&hwcredit=-1&hwdifficulty=-1&likeability=-1&patience=-1&studyguide=-1&testdifficulty=-1"
+####curl http://localhost:3000/api/v1/attributes_data -d "professor_id=5&accent=5&book_needed=3&clarity=-1&curves_course_grade=-1&curves_test_grade=-1&enthusiasm=-1&exam_partial_cred=-1&extracredit=-1&gender=-1&helpfulness=-1&hoursneeded=-1&hwcredit=-1&hwdifficulty=-1&likeability=-1&patience=-1&studyguide=-1&testdifficulty=-1"

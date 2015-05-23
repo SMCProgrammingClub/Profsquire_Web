@@ -18,6 +18,8 @@ class Professor < ActiveRecord::Base
   has_many :patiences
   has_many :study_guides
   has_many :test_difficulties
+
+
 end
 
 

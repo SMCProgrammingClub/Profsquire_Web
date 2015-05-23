@@ -1,6 +1,7 @@
 module Professors
   class Data < Grape::API
 
+
     resource :professors_data do
 
       desc "list"
