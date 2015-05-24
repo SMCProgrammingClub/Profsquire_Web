@@ -3,7 +3,8 @@
 #
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
-#
+# to run locally, first make sure postgres is running by typing: postgres -D /usr/local/var/postgres
+# then run rake db:setup
 development:
   adapter: postgresql
   encoding: utf8
@@ -27,3 +28,5 @@ production:
   pool: 5
   username:
   password:
+
+
