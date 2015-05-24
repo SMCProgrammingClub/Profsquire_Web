@@ -5,7 +5,7 @@ namespace :import do
 
   task data: :environment do
 
-    file = "professors2.csv"
+    file = "professor_csv.csv"
 
     CSV.foreach(file, :headers => false) do |row|
       Professor.create ({
