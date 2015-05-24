@@ -7,7 +7,7 @@ namespace :import do
 
     file = "professor_csv.csv"
 
-    CSV.foreach(file, :headers => false) do |row|
+    CSV.foreach(file, :headers => true) do |row|
       Professor.create ({
                            :name => row[0]
                        })
