@@ -116,7 +116,7 @@ a:hover, a:focus {
     float: left;
     padding: 2em 1.2em;
     max-width: 4em;
-    background: url(asset-path('burger.png')) center right no-repeat;
+    background-image: url(image-path('burger.png')) center right no-repeat;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
