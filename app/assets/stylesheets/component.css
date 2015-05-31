@@ -25,7 +25,8 @@ body,
 }
 
 .st-content {
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
+    z-index: 100;
     background: url('background.jpg') no-repeat center center fixed;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
