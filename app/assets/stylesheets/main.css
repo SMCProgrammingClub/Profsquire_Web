@@ -2,7 +2,7 @@
 
 body {
     background: #ffffff; /* not main color background */
-    color: #000000;
+    color: red;
     font-weight: 300;
     font-family: 'Lato', Calibri, Arial, sans-serif;
     background-image: url("background.jpg");
