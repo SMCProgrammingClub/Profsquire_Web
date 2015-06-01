@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image:url('../images/Nav-Bar-Logo.png');
+    background-image:url('Nav-Bar-Logo.png');
     background-color: #666666;
     margin-top: 0px;
     width: 100%;
@@ -16,15 +16,12 @@ body{
     width: 100%;
     position: fixed;
     background-color: #ffffff;
-    opacity: 100;
 }
 
 #about_wrapper{
     height: 200px;
     width: 100%;
-    margin-top: 100px;
     background-color: red;
-    background-image: url(../images/background.jpg);
 }
 
 #professor_profile {
