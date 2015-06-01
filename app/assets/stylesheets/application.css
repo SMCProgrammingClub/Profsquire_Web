@@ -12,7 +12,4 @@
  *
  *= require_tree .
  *= require_self
- *= require component.css
- *= require main.css
- *= require normalize.css
  */
