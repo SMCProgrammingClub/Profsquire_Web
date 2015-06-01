@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url(<%= asset_path 'upload.png' %>);
+    background-image: url('background.jpg');
     background-color: #666666;
 }
 
