@@ -4,9 +4,7 @@
 }
 
 body{
-    background-image:url('../../../public/Background.jpg');
-    background-repeat: repeat;
-    background-color: #888;
+    background: url(Background.jpg) repeat, center, #888;
     width: 1000px;
     height: 1000px;
 }

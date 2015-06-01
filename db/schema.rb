@@ -11,7 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150523181300) do
+ActiveRecord::Schema.define(version: 20150523180738) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "comments", force: :cascade do |t|
     t.integer  "professor_id"
@@ -21,9 +24,9 @@ ActiveRecord::Schema.define(version: 20150523181300) do
   end
 
   create_table "courses", force: :cascade do |t|
-    t.string   "department",   limit: 255
-    t.string   "subject",      limit: 255
-    t.string   "course",       limit: 255
+    t.string   "department"
+    t.string   "subject"
+    t.string   "course"
     t.integer  "section"
     t.integer  "professor_id"
     t.integer  "a"
@@ -33,7 +36,7 @@ ActiveRecord::Schema.define(version: 20150523181300) do
     t.integer  "f"
     t.integer  "w"
     t.integer  "total"
-    t.string   "semester",     limit: 255
+    t.string   "semester"
     t.integer  "year"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -63,7 +66,7 @@ ActiveRecord::Schema.define(version: 20150523181300) do
   end
 
   create_table "professors", force: :cascade do |t|
-    t.string   "name",       limit: 255
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
