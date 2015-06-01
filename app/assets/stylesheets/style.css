@@ -7,9 +7,8 @@ body{
     background-image:url('Background.jpg');
     background-repeat: repeat;
     background-color: #888;
-    margin-top: 0px;
-    width: 100%;
-    height: 100%;
+    width: 1000px;
+    height: 1000px;
 }
 
 #burger{
