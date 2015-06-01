@@ -3,8 +3,14 @@
     margin-top: 0;
 }
 
-body{
+#body{
     background-image: url("background.jpg");
+}
+
+#nav{
+    height: 30px;
+    width: 100%;
+    background-color: #ffffff;
 }
 
 #about_wrapper{
