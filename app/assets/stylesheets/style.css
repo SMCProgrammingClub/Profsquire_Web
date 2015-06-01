@@ -1,4 +1,4 @@
-#about_container{
+#background_image{
     background: url('background.jpg') no-repeat center center fixed;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -11,6 +11,7 @@
     height: 200px;
     width: 100%;
     margin-top: 100px;
+    background-color: red;
 }
 
 #professor_profile {

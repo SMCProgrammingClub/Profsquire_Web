@@ -5,12 +5,10 @@
             <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
             <%= csrf_meta_tags %>
     </head>
-<body>
 
-
-  <%= render "layouts/header"%>
-  <%= yield %>
-
-
-</body>
+    <body>
+        <%= render "layouts/header"%>
+        <div id="background_image"></div>
+        <%= yield %>
+    </body>
 </html>
