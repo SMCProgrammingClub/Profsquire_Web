@@ -4,14 +4,7 @@
 }
 
 body{
-    background: url('background.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color: green;
-    background-image:url("background.jpg");
-    background-attachment: fixed;
+    background-image: url("background.jpg");
 }
 
 #about_wrapper{
