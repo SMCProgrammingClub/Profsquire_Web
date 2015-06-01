@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url(../images/background.jpg);
+    background-image: url(<%= asset_path 'upload.png' %>);
     background-color: #666666;
 }
 
@@ -12,6 +12,7 @@ body{
     height: 30px;
     width: 100%;
     background-color: #ffffff;
+    opacity: 100;
 }
 
 #about_wrapper{
