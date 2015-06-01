@@ -7,6 +7,15 @@
     background-size: cover;
 }
 
+body{
+    background: url('background.jpg') no-repeat center center fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 #about_wrapper{
     height: 200px;
     width: 100%;
