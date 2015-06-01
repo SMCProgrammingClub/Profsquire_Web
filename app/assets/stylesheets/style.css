@@ -1,10 +1,18 @@
+*{
+    margin: 0px;
+    margin-top: 0px;
+}
+
 #background_image{
-    background: url('background.jpg') no-repeat center center fixed;
+    background: url('background.jpg') /*no-repeat center center fixed*/;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-color: green;
+    background-image:url("Background.gif");
+    background-attachment: fixed;
 }
 
 body{
