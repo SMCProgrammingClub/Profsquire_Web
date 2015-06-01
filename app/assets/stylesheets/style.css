@@ -12,8 +12,9 @@ body{
 }
 
 #burger{
-    border: px solid #000;
+    border: 1px solid #000;
     border-radius: 15px;
+    width: 10px;
 }
 
 #nav{
