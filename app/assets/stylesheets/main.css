@@ -199,11 +199,9 @@ a:hover, a:focus {
 }
 
 @media screen and (max-width: 950px) {
-
     .smc-top img{
         padding-right: 0px;
     }
-
 }
 
 
