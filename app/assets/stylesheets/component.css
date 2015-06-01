@@ -191,8 +191,8 @@ body,
     -moz-transition: width 0.3s;
     transition: width 0.3s;
     -webkit-backface-visibility: hidden;
-    border-radius: 10px;
-    box-shadow: -5px 0 5px -5px #333;
+    border-radius: 50px;
+    /*box-shadow: -5px 0 5px -5px #333;*/
 
 }
 
@@ -246,8 +246,6 @@ body,
     cursor: pointer;
     border-radius: 0 10px 10px 0;
     box-shadow: -5px 0 5px -5px #333;
-
-
 }
 
 .sb-search-submit {
@@ -283,8 +281,6 @@ body,
 .sb-icon-search:before {
     content: "\e000";
 }
-
-
 
 /* Open state */
 .sb-search.sb-search-open,
