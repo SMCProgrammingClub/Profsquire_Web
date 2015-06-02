@@ -1,30 +1,103 @@
 *{
     margin: 0;
-    margin-top: 0;
 }
 
 body{
-    background: url(Background.jpg) repeat, center, #888;
-    width: 1000px;
-    height: 1000px;
+    background: url(Background.jpg) fixed, center, #888;
+    background-size: cover;
+    overflow: hidden;
 }
 
-#burger{
-    border: 1px solid #000;
-    border-radius: 15px;
-    width: 10px;
-}
+/*---------------------Navigation-----------------------*/
 
 #nav{
-    height: 50px;
+    top: 0;
+    height: 60px;
     width: 100%;
     position: fixed;
     background-color: #ffffff;
 }
 
-#nav_logo{
+#burger{
+    width: 45px;
+    height: 45px;
+    background-image: url(Side-Menu-Icon.png);
     float: left;
 }
+
+#navigation-logo{
+    height: 53px;
+    width: 252px;
+    background-image: url(Nav-Bar-Logo.png);
+    display: block;
+    vertical-align: middle;
+    margin-left: 15px;
+    float: left;
+}
+
+#nav-facebook-logo{
+    height: 54px;
+    width:54px;
+    background-image: url(Facebook-Icon-black.png);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    float: right;
+}
+
+#nav-twitter-logo{
+    height: 54px;
+    width:54px;
+    background-image: url(Twitter-Icon-black.png);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    float: right;
+}
+
+#nav-facebook-logo:hover{
+    background-image: url(Facebook-Icon-blue.png);
+}
+
+#nav-twitter-logo:hover{
+    background-image: url(Twitter-Logo-blue.png);
+}
+
+/*--------------------Index Content---------------------*/
+
+#content-wrapper{
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-top: 10%;
+
+}
+
+#index-logo{
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    width: 291px;
+    height: 291px;
+    background-image: url(Logo.png);
+}
+
+#index-name{
+    text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 65px;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+#index-slogan{
+    text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 25px;
+    color: #fff;
+}
+
+/*---------------------About Page-----------------------*/
 
 #about_wrapper{
     height: 200px;
@@ -32,6 +105,8 @@ body{
     background-color: red;
 }
 
+
+/*-------------------Professor Page---------------------*/
 #professor_profile {
     margin-right: auto;
     margin-left: auto;
