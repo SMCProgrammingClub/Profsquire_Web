@@ -19,6 +19,7 @@ body{
 }
 
 #burger{
+    margin-top: 8px;
     width: 45px;
     height: 45px;
     background-image: url(Side-Menu-Icon.png);
@@ -26,6 +27,7 @@ body{
 }
 
 #navigation-logo{
+    margin-top: 2px;
     height: 53px;
     width: 252px;
     background-image: url(Nav-Bar-Logo.png);
