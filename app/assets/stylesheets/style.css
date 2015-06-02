@@ -20,6 +20,7 @@ body{
 
 #burger{
     margin-top: 8px;
+    margin-left: 10px;
     width: 45px;
     height: 45px;
     background-image: url(Side-Menu-Icon.png);
