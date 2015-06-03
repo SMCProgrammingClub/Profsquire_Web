@@ -132,6 +132,38 @@ body{
     color: #444;
 }
 
+/*--------------------Contact Page-----------------------*/
+
+#contact-wrapper{
+    margin-top: 130px;
+    padding-top: 35px;
+    width: 100%;
+    height: 515px;
+    background-color: #fff;
+    text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 25px;
+    color: #000;
+}
+
+#contact-logo{
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    width: 170px;
+    height: 170px;
+    background-image: url(Logo-Sidebar-Gray.png);
+}
+
+#contact-text{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    position: relative;
+    width: 700px;
+    color: #444;
+}
+
 /*-------------------Professor Page---------------------*/
 #professor_profile {
     margin-right: auto;
