@@ -16,6 +16,8 @@ body{
     width: 100%;
     position: fixed;
     background-color: #ffffff;
+    box-shadow: 0 2px 2px -2px gray;
+    z-index: 100;
 }
 
 #burger{
@@ -163,6 +165,62 @@ body{
     width: 700px;
     color: #444;
 }
+
+/*---------------------Professors List Page-----------------------*/
+
+#professors-logo{
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    width: 170px;
+    height: 170px;
+    background-image: url(Logo-Sidebar-Gray.png);
+}
+
+#professors-list-wrapper{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    position: relative;
+    width: 990px;
+    height: 100vh;
+    background-color: #ffffff;
+    overflow: scroll;
+}
+
+#professors-title{
+    text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 40px;
+    color: #444;
+}
+
+#professors-list-filters-box{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 50px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+/*--Remove when rails is used--*/
+#contents{
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    height: 50px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    line-height: 50px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 20px;
+    color: #444;
+}
+/*remove till here this is only for display purposes*/
 
 /*-------------------Professor Page---------------------*/
 #professor_profile {
