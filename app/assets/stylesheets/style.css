@@ -168,15 +168,6 @@ body{
 
 /*---------------------Professors List Page-----------------------*/
 
-#professors-logo{
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-    width: 170px;
-    height: 170px;
-    background-image: url(Logo-Sidebar-Gray.png);
-}
-
 #professors-list-wrapper{
     margin-right: auto;
     margin-left: auto;
@@ -184,27 +175,81 @@ body{
     position: relative;
     width: 990px;
     height: 100vh;
-    background-color: #ffffff;
     overflow: scroll;
 }
 
-#professors-title{
-    text-align: center;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 40px;
-    color: #444;
+#professors-list-filters-box{ /*this is the container to the filter area*/
+    margin-top: 30px;
+    padding-top: 15px;
+    width: 100%;
+    height: 185px;
+    background-color: #ffffff;
 }
 
-#professors-list-filters-box{
+#professors-logo{
+    margin-left: 45px;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 170px;
+    height: 170px;
+    background-image: url(Logo-Sidebar-Gray.png);
+    float: left;
+}
+
+#professors-filter-area{/*this is where the filter pull downs go and search bar*/
+    margin-left: 40px;
+    width: 700px;
+    height: 170px;
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+    z-index: 90;
+}
+
+#professors-list-content-box{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #fff;
+}
+
+#professors-list-top-subjects{
     margin-right: auto;
     margin-left: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 90%;
-    height: 50px;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-width: 1px;
+    padding-top: 40px;
+    position: relative;
+    width: 810px;
+    height: 40px;
+}
+
+#professor-name{
+    width: 270px;
+    color: #444;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 35px;
+    top:50%;
+    float: left;
+    text-align: left;
+}
+
+#professor-subject{
+    width: 270px;
+    color: #444;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 35px;
+    top:50%;
+    float: left;
+    text-align: center;
+}
+
+#professor-rating{
+    width: 270px;
+    color: #444;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 35px;
+    top:50%;
+    float: left;
+    text-align: right;
 }
 
 /*--Remove when rails is used--*/
@@ -215,10 +260,17 @@ body{
     height: 50px;
     border-bottom-style: solid;
     border-width: 1px;
+    border-bottom-color: #999;
     line-height: 50px;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 20px;
     color: #444;
+}
+
+#extra{
+    width: 100%;
+    height: 50px;
+    background-color: red;
 }
 /*remove till here this is only for display purposes*/
 
