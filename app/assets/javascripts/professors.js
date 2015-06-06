@@ -18,3 +18,8 @@ $("#close").click(function() {
     $("#professor_profile").animate({'height': 0}, 'fast', function(){ $(this).hide(); });
     isClicked = true;
 });
+
+
+
+
+
