@@ -13,23 +13,24 @@
         var dx=5;
         var dy=5;
 
+
         function init() {
             context= circleCanvas.getContext('2d');
             setInterval(draw,300);
         }
 
         function draw() {
-            context.clearRect(0,0,300,300);
+            context.clearRect(0,0,1000,600);
             context.beginPath();
-            context.fillStyle="#0000ff";
+            context.fillStyle = "rgba(255, 255, 255, 0.5)";
             // Draws a circle of radius 20 at the coordinates 100,100 on the canvas
-            context.arc(x,y,30,0,Math.PI*2,true);
-
+            context.arc(x,y,50,0,Math.PI*2,true);
             context.closePath();
             context.fill();
+
             // Boundary Logic
-            if( x<0 || x>300) dx=-dx;
-            if( y<0 || y>300) dy=-dy;
+            if( x<0 || x>1000) dx=-dx;
+            if( y<0 || y>600) dy=-dy;
             x+=dx;
             y+=dy;
         }
@@ -39,7 +40,7 @@
     <body onload="init()">
         <%= render "layouts/header"%>
         <%= yield %>
-        <canvas id="circleCanvas", width="300", height="300">
+        <canvas id="circleCanvas", width="1000", height="600">
         </canvas>
 
     </body>
