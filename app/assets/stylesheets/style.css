@@ -6,12 +6,14 @@ body{
     background: url(Background.jpg) fixed, center, #fff;
     background-size: cover;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
-#circleCanvas{
+#canvas{
     width: 100%;
     height: 100vh;
-    z-index: 101;
+    z-index: 1;
     margin-top: -500px;
 }
 
@@ -82,7 +84,8 @@ body{
     display: block;
     position: relative;
     margin-top: 10%;
-
+    overflow: scroll;
+    z-index: 99;
 }
 
 #index-logo{
