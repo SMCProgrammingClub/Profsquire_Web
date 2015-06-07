@@ -21,11 +21,11 @@ function init() {
         {x: 0, y: 0, r: 0, vx: 0, vy: 0}];
 
     for(var i = 0; i < circles.length; i++) {
-        x = Math.floor((Math.random() * window.innerWidth) + 1);// These set the Coordinates of the starting circle
+        x = Math.floor((Math.random() * window.innerWidth) + 1);// These set the coordinates of the starting circle
         y = Math.floor((Math.random() * window.innerHeight) + 1);// to a random position
         r = Math.floor((Math.random() * 80) + 60);//Sets radius of circle
-        dx = (Math.random() * (0.20 - 0.01) + 0.01); //These set the speed and the random path
-        dy = (Math.random() * (0.20 - 0.01) + 0.01); //the circles move in
+        dx = (Math.random() * (0.20 - 0.01) + 0.01); //Set the velocity on x-axis
+        dy = (Math.random() * (0.20 - 0.01) + 0.01); //These set the velocity on y-axis
 
         circles[i].y = y;
         circles[i].x = x;

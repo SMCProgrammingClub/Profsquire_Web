@@ -78,7 +78,7 @@ body{
     display: block;
     position: relative;
     margin-top: 10%;
-    overflow: scroll;
+    overflow: hidden;
     z-index: 99;
 }
 
