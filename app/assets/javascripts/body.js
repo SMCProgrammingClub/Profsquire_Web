@@ -33,12 +33,13 @@ function windowsize(){
     var ctx = document.getElementById("canvas");
     ctx.width = window.outerWidth;
     ctx.height = window.innerHeight;
+    //$('#canvas').css('background-color', 'rgba(158, 167, 184, 0.2)');
 }
-windowsize();
 
 function init() {
     context = canvas.getContext('2d');
-    requestAnimationFrame(draw);              // start, see below
+    windowsize();
+    requestAnimationFrame(draw);    // start, see below
 }
 
 function draw() {
