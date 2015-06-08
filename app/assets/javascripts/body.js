@@ -20,7 +20,7 @@ function init() {
         {x: 0, y: 0, r: 0, vx: 0, vy: 0},
         {x: 0, y: 0, r: 0, vx: 0, vy: 0}];
 
-    for(var i = 0; i < circles.length; i++) {
+    for(var i = 0; i < circles.length; i++) {//initializes array to 6 random values
         x = Math.floor((Math.random() * window.innerWidth) + 1);// These set the coordinates of the starting circle
         y = Math.floor((Math.random() * window.innerHeight) + 1);// to a random position
         r = Math.floor((Math.random() * 80) + 60);//Sets radius of circle
@@ -36,9 +36,9 @@ function init() {
 
     function draw() {
 
-        context.clearRect(0,0,window.innerWidth,window.innerHeight);
+        context.clearRect(0,0,window.innerWidth,window.innerHeight);//removes behind circle
 
-        for(var i = 0; i <circles.length; i++) {
+        for(var i = 0; i <circles.length; i++) {//loop in 6 circles
             context.fillStyle = 'hsl(' + circles[i].color + ',100%,50%)';
             context.beginPath();
             context.fillStyle = "rgba(255, 255, 255, 0.15)";
