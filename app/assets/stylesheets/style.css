@@ -17,7 +17,6 @@ body{
     z-index: 0;
 }
 
-
 /*---------------------Navigation-----------------------*/
 
 #nav{
@@ -186,6 +185,7 @@ body{
     width: 100%;
     height: 100vh;
     overflow: scroll;
+    z-index: 1;
 }
 
 #professors-list-filters-box{ /*this is the container to the filter area*/
@@ -291,7 +291,15 @@ body{
 /*remove till here this is only for display purposes*/
 
 /*-------------------Professor Page---------------------*/
-#professor_profile {
+
+#professor-stats-wrapper{
+    margin-top: 150px;
+    width: 100%;
+    height: 350px;
+    background-color: #fff;
+}
+
+#professor-profile{
     margin-right: auto;
     margin-left: auto;
     width: 500px; height: 200px;
@@ -300,9 +308,10 @@ body{
     border-radius: 15px;
     box-shadow: -1px 1px 2px #888888;
     position:relative;
+    z-index: 1;
 }
 
-#professor_full_profile {
+#professor-full-profile{
     width: 170px;
     height: 20px;
     text-align: center;
@@ -315,12 +324,12 @@ body{
     cursor: pointer;
 }
 
-#professor_full_profile:hover {
+#professor-full-profile:hover{
     color: #fff;
     Background-color: #CCC;
 }
 
-#x {
+#x{
     border: 1px solid #888;
     Background-color: #fff;
     border-radius: 50px;
@@ -337,7 +346,7 @@ body{
     Background-color: #CCC;
 }
 
-#close {
+#close{
     margin-right: 25px;
     margin-top: -35px;
     text-decoration: underline;
@@ -348,7 +357,7 @@ body{
     cursor: pointer;
 }
 
-#content {
+#content{
     width: 425px;
     height: 510px;
     background-color: #fff;
@@ -362,7 +371,7 @@ body{
     z-index: 0;
 }
 
-#professor_pop_top {
+#professor-pop-top{
     margin-right: auto;
     margin-left: auto;
     margin-top: 20px;
@@ -375,7 +384,7 @@ body{
     z-index: 10;
 }
 
-#professor_name {
+#professor-name{
     margin-left: 50px;
     margin-top: -30px;
     font-size: 30px;
@@ -385,12 +394,12 @@ body{
     float: left;
 }
 
-#professor_pop_image {
+#professor-pop-image{
     margin-left: 50px;
     float: left;
 }
 
-#professor_pop_bottom {
+#professor-pop-bottom{
     margin-right: auto;
     margin-left: auto;
     margin-top: -35px;
@@ -403,26 +412,26 @@ body{
     z-index: 1;
 }
 
-#category_container {
+#category-container{
     width: 100%;
     height: 40px;
     border-bottom: 1px solid #999;
     font-size: 20px;
 }
 
-#category_container_bottom {
+#category-container-bottom{
     width: 100%;
     height: 40px;
     font-size: 20px;
 }
 
-#category {
+#category{
     position: relative;
     top: 20%;
     float: left;
 }
 
-#score {
+#score{
     position: relative;
     top: 20%;
     color: #5cc7f2;

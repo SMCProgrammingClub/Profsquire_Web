@@ -36,9 +36,9 @@ function init() {
 
     function draw() {
 
-        context.clearRect(0,0,window.innerWidth,window.innerHeight);//removes behind circle
+        context.clearRect( 0, 0, window.innerWidth, window.innerHeight);//removes behind circle
 
-        for(var i = 0; i <circles.length; i++) {//loop in 6 circles
+        for(var i = 0; i < circles.length; i++) {//loop in 6 circles
             context.fillStyle = 'hsl(' + circles[i].color + ',100%,50%)';
             context.beginPath();
             context.fillStyle = "rgba(255, 255, 255, 0.15)";
