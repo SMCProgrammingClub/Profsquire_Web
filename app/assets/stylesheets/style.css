@@ -30,51 +30,56 @@ body{
 }
 
 #burger{
-    margin-top: 8px;
     margin-left: 10px;
-    width: 45px;
-    height: 45px;
-    background-image: url(Side-Menu-Icon.png);
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-image: url(Burger.png);
+    background-position: center;
     float: left;
 }
 
 #navigation-logo{
-    margin-top: 4px;
-    height: 53px;
-    width: 252px;
-    background-image: url(Nav-Bar-Logo.png);
+    margin-top: 1px;
+    height: 60px;
+    width: 250px;
+    background-image: url(Profsquire-Logo-Nav.png);
+    background-repeat: no-repeat;
+    background-position: center;
     display: block;
-    vertical-align: middle;
-    margin-left: 15px;
     float: left;
 }
 
 #nav-facebook-logo{
-    height: 54px;
-    width:54px;
-    background-image: url(Facebook-Icon-black.png);
-    display: inline-block;
-    vertical-align: middle;
+
     margin-right: 15px;
+    height: 60px;
+    width:60px;
+    background-image: url(Facebook-Icon-Black.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
     float: right;
 }
 
 #nav-twitter-logo{
-    height: 54px;
-    width:54px;
-    background-image: url(Twitter-Icon-black.png);
+
+    margin-right: 25px;
+    height: 60px;
+    width:60px;
+    background-image: url(Twitter-Icon-Black.png);
     display: inline-block;
-    vertical-align: middle;
-    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
     float: right;
 }
 
 #nav-facebook-logo:hover{
-    background-image: url(Facebook-Icon-blue.png);
+    background-image: url(Facebook-Icon-Blue.png);
 }
 
 #nav-twitter-logo:hover{
-    background-image: url(Twitter-Logo-blue.png);
+    background-image: url(Twitter-Icon-Blue.png);
 }
 
 /*--------------------Index Content---------------------*/
