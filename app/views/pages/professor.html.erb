@@ -1,6 +1,9 @@
 <div id="professor-wrapper">
   <div id="filler-top"></div>
     <div id="professor-stats-wrapper">
+
+      <div id="professors-stats-content-wrapper"></div>
+
     <button id="professor-full-profile">View Full Profile</button>
 
         <div id="professor-profile" style= "display: none;">
@@ -37,6 +40,7 @@
           <div id="next"><div id="close" >Close</div></div>
         </div>
     </div>
+
   <div id="filler"></div>
   <div id="professor-grades-wrapper">
     <div id="professor-grades-title">Grades By Semester</div>
@@ -45,13 +49,14 @@
 
 
   <div id="filler"></div>
-  <div id="student-comments-wrapper">
-    <div id="student-comments-title-wrapper">
-      <div id="student-comments-stats">Stats</div>
-      <div id="student-comments-title">Comments</div>
-      <div id="student-comments-count">14 Comments</div>
+  <div id="student-comments-wrapper"><!--White div spanning the width of the site-->
+    <div id="student-comments-title">Comments</div><!--Header for this div-->
+    <div id="student-comments-content-wrapper"><!--Wrapper that holds the comments-->
+      This is where the commments go, without the background
+      <!--put comment code here-->
     </div>
   </div>
+
 </div>
 
 <%= javascript_include_tag 'application.js' %>

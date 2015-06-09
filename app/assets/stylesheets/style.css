@@ -329,6 +329,12 @@ body{
     z-index: 2;
 }
 
+#professor-stats-content-wrapper{
+    width: 990px;
+    height: 100vh;
+    background-color: red;
+}
+
 #professor-profile{
     margin-right: auto;
     margin-left: auto;
@@ -478,8 +484,7 @@ body{
 }
 
 #professor-grades-title {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    height: 40px;
     text-align: center;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 30px;
@@ -498,44 +503,21 @@ body{
     z-index: 2;
 }
 
-#student-comments-title-wrapper{
-    height: 30px;
-    padding-top: 10px;
+#student-comments-title {
+    height: 40px;
+    text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 30px;
     border-bottom-style: solid;
     border-width: 1px;
     border-bottom-color: #999;
 }
 
-#student-comments-title{
-    width: 33.333%;
-    text-align: center;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 20px;
-    top: 50%;
-    float: left;
-}
-
-#student-comments-stats{
-    width: 33.33%;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 20px;
+#student-comments-content-wrapper{
+    margin-right: auto;
+    margin-left: auto;
     position: relative;
-    float: left;
-}
-
-#student-comments-title{
-    margin-top: -18px;
-    width:33.33%;
-    position: relative;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 25px;
-}
-
-#student-comments-count{
-    width: 33.33%;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 20px;
-    text-align: right;
-    position: relative;
-    float: right;
+    width: 990px;
+    height: 335px;
+    background-color: beige;
 }
