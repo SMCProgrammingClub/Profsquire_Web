@@ -10,10 +10,12 @@ $("#professor-full-profile").click(function() {
         isClicked = true;
     }
 });
+
 $("#x").click(function() {
     $("#professor-profile").animate({'height': 0}, 'fast', function(){ $(this).hide(); });
     isClicked = true;
 });
+
 $("#close").click(function() {
     $("#professor-profile").animate({'height': 0}, 'fast', function(){ $(this).hide(); });
     isClicked = true;
